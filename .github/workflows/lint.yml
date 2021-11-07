@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Lint
+
+# Controls when the workflow will run
+on: [push, pull_request]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  install-dependencies:
+    name: Install Dependencies
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Install from PSGallery
+        shell: pwsh
+        run: |
+          Set-PSRepository PSGallery -InstallationPolicy Trusted
+          Install-Module PSScriptAnalyzer
+      - name: Lint with PSScriptAnalyzer
+        shell: pwsh
+        run: |
+          Invoke-ScriptAnalyzer -Path *.ps1 -Recurse -Outvariable issues
+          $errors   = $issues.Where({$_.Severity -eq 'Error'})
+          $warnings = $issues.Where({$_.Severity -eq 'Warning'})
+          if ($errors) {
+              Write-Error "There were $($errors.Count) errors and $($warnings.Count) warnings total." -ErrorAction Stop
+          } else {
+              Write-Output "There were $($errors.Count) errors and $($warnings.Count) warnings total."
+          }
+
+  
