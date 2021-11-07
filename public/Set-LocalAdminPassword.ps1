@@ -59,6 +59,5 @@ function Set-LocalAdminPassword {
 	Invoke-Command @params
 
     Write-Host "Local Admin password(s) has been changed"
-
-
+    
 }
