@@ -91,7 +91,7 @@
         PSData = @{
     
             # Tags applied to this module. These help with module discovery in online galleries.
-            Tags = @('PSModule','Windows Server','Active Directory','SCOM','SCCM')
+            Tags = @('PSModule','WindowsServer','ActiveDirectory','SCOM','SCCM')
     
             # A URL to the license for this module.
             # LicenseUri = ''
