@@ -12,7 +12,7 @@
     RootModule = 'WinOps.psm1'
     
     # Version number of this module.
-    ModuleVersion = '0.10.0'
+    ModuleVersion = '0.11.0'
     
     # Author of this module
     Author = 'Evan Chisholm'
@@ -115,6 +115,6 @@
     # Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
     # DefaultCommandPrefix = ''
     
-    }
+}
     
     
