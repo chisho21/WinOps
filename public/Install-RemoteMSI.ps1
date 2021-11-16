@@ -26,7 +26,7 @@ function Install-RemoteMSI {
 
         ## Mount network drive using creds
         Write-Host "[ $env:COMPUTERNAME ] - Connecting to $root" -ForegroundColor Yellow
-        New-PSDrive -Name companyWINOPSINSTALL -PSProvider FileSystem -Root $root -Credential $using:Credential
+        New-PSDrive -Name WinOpsINSTALL -PSProvider FileSystem -Root $root -Credential $using:Credential
 
         ## Determine installer file
         Write-Host "[ $env:COMPUTERNAME ] - Installing MSI path:: $($path)" -ForegroundColor Yellow

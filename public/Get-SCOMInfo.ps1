@@ -23,7 +23,7 @@ function Get-SCOMInfo {
             $LocalCollectionEnabled = try{$agent.GetLocalCollectionEnabled()}catch{try{$agent.LocalCollectionEnabled()}catch{}}
             $proxyURL = try{$agent.proxyURL}catch{}
             $proxyUsername = try{$agent.proxyUsername}catch{}
-            #iterate through management group info can be mutli value, especicompany during migration
+            #iterate through management group info can be mutli value, especially during migration
             $ManagementGroupInfo = @()
             foreach ($info in $ManagementGroupInfoRaw){
                 $mgobject = [PSCustomObject]@{

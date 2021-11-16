@@ -1,15 +1,4 @@
 function Get-SystemInfo {
- 
-	<#
-	.Synopsis
-	   Remote repalcement for "systeminfo"
-	.DESCRIPTION
-	   Script pulls relavent systeminfo for Windows Machine.
-	.SERVICENOW_REF
-		N/A
-	.EXAMPLE
-
-	#>
     [CmdletBinding()]
     Param (
         [string[]]

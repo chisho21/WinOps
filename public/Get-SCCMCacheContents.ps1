@@ -1,18 +1,4 @@
 function Get-SCCMCacheContents {
-
-	<#
-	.Synopsis
-	   Obtain a list of files in C:\windows\ccmcache
-	.DESCRIPTION
-	   Obtain a list of files in C:\windows\ccmcache. Helpful for checking on the SCCM cache status for patching
-	.SERVICENOW_REF
-		N/A
-	.EXAMPLE
-       Get a list of cached files in Out-GridView for easy sorting: 
-       PS> Get-SCCMCacheContents dfwpaap00660 -Credential $admincred | ogv
-       (View output in Grid View)
-	#>
-
 		Param (
             [Parameter(Mandatory=$true,
                            Position=0)]

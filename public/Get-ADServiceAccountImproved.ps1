@@ -21,7 +21,7 @@ function Get-ADServiceAccountImproved {
     }
     process {
         ## Set Default -Properties
-            $defaultproperties = "CanonicalName","WhenCreated","LastLogonDate","Description","companyCustom103","DNSHostName","MemberOf","Enabled","LockedOut","PasswordExpired","PasswordLastSet","PasswordNeverExpires"
+            $defaultproperties = "CanonicalName","WhenCreated","LastLogonDate","Description","DNSHostName","MemberOf","Enabled","LockedOut","PasswordExpired","PasswordLastSet","PasswordNeverExpires"
         ## Create Splat Table based on inputs
         $userparams = @{
             Server = $Server

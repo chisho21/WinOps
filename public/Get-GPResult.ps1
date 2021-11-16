@@ -29,7 +29,7 @@ function Get-GPResult {
                 'Html' {'/H'}
             }
                 foreach ($u in $userlist) { 
-                    $user = "NAO\$u"
+                    $user = "$u"
                     Write-Host "[ $env:ComputerName ] - Exporting GPRESULT Report to $path. Using user $user. Please Wait..."
 
                     $null = gpresult.exe $formatswitch $path /SCOPE Computer /USER $user /F

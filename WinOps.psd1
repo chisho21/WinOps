@@ -12,7 +12,7 @@
     RootModule = 'WinOps.psm1'
     
     # Version number of this module.
-    ModuleVersion = '0.11.0'
+    ModuleVersion = '0.12.0'
     
     # Author of this module
     Author = 'Evan Chisholm'
@@ -24,7 +24,7 @@
     Copyright = '(c) 2021 FerosFerio Consulting. All rights reserved.'
     
     # Description of the functionality provided by this module
-    Description = 'Powershell module for storing creds locally via encrypted xml'
+    Description = 'PSModule For Windows/AD Administration'
     
     # Minimum version of the Windows PowerShell engine required by this module
     PowerShellVersion = '5.1'

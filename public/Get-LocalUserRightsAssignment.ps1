@@ -17,7 +17,7 @@ function Get-LocalUserRightsAssignment {
                 'SeTcbPrivilege' {'Act as part of the operating system' ; break } 
                 'SeMachineAccountPrivilege' {'Add workstations to domain' ; break } 
                 'SeIncreaseQuotaPrivilege' {'Adjust memory quotas for a process' ; break } 
-                'SeInteractiveLogonRight' {'Allow log on loccompany' ; break } 
+                'SeInteractiveLogonRight' {'Allow log on locally' ; break } 
                 'SeRemoteInteractiveLogonRight' {'Allow log on through Remote Desktop Services' ; break } 
                 'SeBackupPrivilege' {'Back up files and directories' ; break } 
                 'SeChangeNotifyPrivilege' {'Bypass traverse checking' ; break } 
@@ -32,7 +32,7 @@ function Get-LocalUserRightsAssignment {
                 'SeDenyNetworkLogonRight' {'Deny access to this computer from the network' ; break } 
                 'SeDenyBatchLogonRight' {'Deny log on as a batch job' ; break } 
                 'SeDenyServiceLogonRight' {'Deny log on as a service' ; break } 
-                'SeDenyInteractiveLogonRight' {'Deny log on loccompany' ; break } 
+                'SeDenyInteractiveLogonRight' {'Deny log on locally' ; break } 
                 'SeDenyRemoteInteractiveLogonRight' {'Deny log on through Remote Desktop Services' ; break } 
                 'SeEnableDelegationPrivilege' {'Enable computer and user accounts to be trusted for delegation' ; break } 
                 'SeRemoteShutdownPrivilege' {'Force shutdown from a remote system' ; break } 

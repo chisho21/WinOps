@@ -38,7 +38,7 @@ function Disconnect-RemoteSession {
 
         if ($closesessions){
             if (!($Force)){
-                $closesessions | select pscomputername,username,id,sessionname,state,idletime,'logon time' | Format-Table
+                $closesessions | Select-Object pscomputername,username,id,sessionname,state,idletime,'logon time' | Format-Table
                 $confirm = Read-Host "Are you sure you want to close these sessions? (Y/N) (Blank=N)"
             }#end if    
             else{

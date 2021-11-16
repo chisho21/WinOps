@@ -34,12 +34,7 @@ function Get-SCCMPatchAuditInfo {
             MSRT = $MSRT
             Chrome = ($data | Where-Object {$_.Name -like "Google Chrome*"}).Version -join ";"
             Firefox = ($data | Where-Object {$_.Name -like "Mozilla firefox*"}).Version -join ";"
-            FireEye = ($data | Where-Object {$_.Name -like "FireEye Endpoint Agent*"}).Version -join ";"
             VMTools = ($data | Where-Object {$_.Name -like "VMware Tools*"}).Version -join ";"
-            Symantec = ($data | Where-Object {$_.Name -like "Symantec Endpoint Protection*"}).Version -join ";"
-            Splunk = ($data | Where-Object {$_.Name -like "UniversalForwarder*"}).Version -join ";"
-            Imperva = ($data | Where-Object {$_.Name -like "Imperva SecureSphere Remote Agent*"}).Version  -join ";"
-            Avamar = ($data | Where-Object {$_.Name -like "*Avamar*"}).Version -join ";"
             JavaJRE = ($data | Where-Object {$_.Name -like "Java 8*"}).Version -join ";"
             JavaJDK = ($data | Where-Object {$_.Name -like "Java SE Development Kit 8*"}).Version -join ";"
             FlashActivex = ($data |  Where-Object {$_.Name -like "*Flash*ActiveX*"}).Version -join ";"

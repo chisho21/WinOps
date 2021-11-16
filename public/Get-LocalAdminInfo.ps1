@@ -3,7 +3,7 @@ function Get-LocalAdminInfo {
         [string[]]
         $ComputerName,
         [string]
-        $UserName, #Need ` as escape character so $ is not treated as a variable if useing $companyadmin
+        $UserName,
         [string]
         $SID = "S-1-5-21-*-500",
         [System.Management.Automation.PSCredential]

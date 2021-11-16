@@ -33,7 +33,7 @@ function Install-SQLCertificate {
         $serviceaccount = (Get-CimInstance win32_service | Where-Object {$_.Name -like "MSSQL`$$using:SQLInstance"}).StartName
 
         ## give permissions to the SQL Service account
-            ## parts stolen from https://xenappblog.com/2017/automaticcompany-install-sql-server-and-enable-ssl-encryption-with-domain-ca/
+            ## parts stolen from https://xenappblog.com/2017/automatically-install-sql-server-and-enable-ssl-encryption-with-domain-ca/
         $permissionType = 'Read'
         try {
             #Clear Existing Variables
