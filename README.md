@@ -35,7 +35,7 @@ Get-SChannelInfo - Useful for hunting down the info that IISCrypto will give you
 ## Room for improvement
 - Designed to run remotely, somecommands work locally, but need a refactor to get away form $using: variables.
 
-Links
+## Links
 [Github Repo](https://github.com/chisho21/WinOps)
 
-[PowerShell Gallery Package](https://www.powershellgallery.com/packages/WinOps/0.10.0)
+[PowerShell Gallery Package](https://www.powershellgallery.com/packages/WinOps/)
