@@ -12,7 +12,7 @@
     RootModule = 'WinOps.psm1'
     
     # Version number of this module.
-    ModuleVersion = '0.12.0'
+    ModuleVersion = '0.12.1'
     
     # Author of this module
     Author = 'Evan Chisholm'
