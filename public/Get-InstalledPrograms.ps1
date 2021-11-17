@@ -20,7 +20,7 @@ function Get-InstalledPrograms {
         
         if (!$data){
             $data = [pscustomobject]@{
-                DisplayName = "-"
+                Name = "-"
                 Version = "-"
                 Publisher = "-"
                 InstallDate = "-"
